@@ -20,21 +20,21 @@
     "group-by-domain": {
       "suggested_key": {
         "default": "Alt+Shift+G",
-        "mac": "Option+Shift+G"
+        "mac": "Command+Shift+G"
       },
       "description": "Group the tabs by domain"
     },
     "delete-duplicate": {
       "suggested_key": {
         "default": "Alt+Shift+D",
-        "mac": "Option+Shift+D"
+        "mac": "Command+Shift+D"
       },
       "description": "Delete duplicate tabs by url"
     },
     "ungroup": {
       "suggested_key": {
         "default": "Alt+Shift+D",
-        "mac": "Option+Shift+D"
+        "mac": "Command+Shift+D"
       },
       "description": "Ungroup all the tabs"
     }
