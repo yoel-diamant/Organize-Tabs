@@ -145,3 +145,7 @@ chrome.runtime.onMessage.addListener(async function (message, sender, sendRespon
     }
     return true
 });
+
+chrome.commands.onCommand.addListener(async (command) => {
+    await callEvent(command)
+  });
