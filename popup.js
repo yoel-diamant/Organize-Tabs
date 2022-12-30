@@ -13,9 +13,9 @@ deleteDuplicateButton.addEventListener("click", async function () {
     chrome.runtime.sendMessage('delete-duplicate');
 });
 
-const sortByTitel = document.getElementById("sort-by-titel-button");
-sortByTitel.addEventListener("click", async function () {
-    chrome.runtime.sendMessage('sort-by-titel');
+const sortByTitle = document.getElementById("sort-by-title-button");
+sortByTitle.addEventListener("click", async function () {
+    chrome.runtime.sendMessage('sort-by-title');
 });
 
 const sortByDomain = document.getElementById("sort-by-domain-button");

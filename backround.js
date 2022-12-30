@@ -59,7 +59,7 @@ async function deleteDuplicate() {
     });
 };
 
-async function sortByTitel() {
+async function sortByTitle() {
     const tabs = await chrome.tabs.query({});
     tabs.sort(
         (a, b) => {
@@ -98,8 +98,8 @@ async function callEvent(
         case 'delete-duplicate':
             await deleteDuplicate();
             break;
-        case 'sort-by-titel':
-            await sortByTitel();
+        case 'sort-by-title':
+            await sortByTitle();
             break;
         case 'sort-by-domain':
             await sortByDomain();
@@ -123,8 +123,8 @@ chrome.runtime.onInstalled.addListener(() => {
         title: 'Sort By Domain',
     });
     chrome.contextMenus.create({
-        id: 'sort-by-titel',
-        title: 'Sort By Titel',
+        id: 'sort-by-title',
+        title: 'Sort By Title',
     });
     chrome.contextMenus.create({
         id: 'delete-duplicate',
@@ -148,4 +148,4 @@ chrome.runtime.onMessage.addListener(async function (message, sender, sendRespon
 
 chrome.commands.onCommand.addListener(async (command) => {
     await callEvent(command)
-  });
+});
