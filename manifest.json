@@ -19,36 +19,22 @@
   "commands": {
     "group-by-domain": {
       "suggested_key": {
-        "default": "Ctrl+Shift+G",
-        "mac": "Command+Shift+G"
+        "default": "Alt+Shift+G",
+        "mac": "Option+Shift+G"
       },
       "description": "Group the tabs by domain"
     },
-    "sort-by-titel": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+T",
-        "mac": "Command+Shift+T"
-      },
-      "description": "Sort the tabs by titel"
-    },
-    "sort-by-domain": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+U",
-        "mac": "Command+Shift+U"
-      },
-      "description": "Sort the tabs by domain"
-    },
     "delete-duplicate": {
       "suggested_key": {
-        "default": "Ctrl+Shift+D",
-        "mac": "Command+Shift+D"
+        "default": "Alt+Shift+D",
+        "mac": "Option+Shift+D"
       },
       "description": "Delete duplicate tabs by url"
     },
     "ungroup": {
       "suggested_key": {
-        "default": "Ctrl+Shift+D",
-        "mac": "Command+Shift+D"
+        "default": "Alt+Shift+D",
+        "mac": "Option+Shift+D"
       },
       "description": "Ungroup all the tabs"
     }
