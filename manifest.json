@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Organize Tabs",
-  "version": "1.0",
+  "version": "3.0",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
@@ -13,6 +13,34 @@
   },
   "permissions": [
     "tabs",
-    "tabGroups"
-  ]
+    "tabGroups",
+    "contextMenus"
+  ],
+  "commands": {
+    "group-by-domain": {
+      "suggested_key": {
+        "default": "Alt+Shift+G",
+        "mac": "Command+Shift+G"
+      },
+      "description": "Group the tabs by domain"
+    },
+    "delete-duplicate": {
+      "suggested_key": {
+        "default": "Alt+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Delete duplicate tabs by url"
+    },
+    "ungroup": {
+      "suggested_key": {
+        "default": "Alt+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Ungroup all the tabs"
+    }
+  },
+  "background": { 
+    "service_worker": "backround.js",
+    "type": "module"
+  }
 }
