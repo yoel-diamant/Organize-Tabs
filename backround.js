@@ -12,16 +12,16 @@ function extractDomain(url) {
         'com',
         'net',
         'org',
-    ];
+    ]
     let domain;
     const splitUrl = url.split('.');
-    const suffix = splitUrl[splitUrl.length];
+    const suffix = splitUrl[splitUrl.length - 1];
     if (splitUrl.length === 1) {
         domain = url;
     } else if (singleWordTlds.includes(suffix)) {
-        domain = splitUrl[splitUrl.length - 1];
-    } else {
         domain = splitUrl[splitUrl.length - 2];
+    } else {
+        domain = splitUrl[splitUrl.length - 3];
     };
 
     return domain;
